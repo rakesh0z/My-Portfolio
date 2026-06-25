@@ -8,9 +8,8 @@
     "build": "vite build",
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
-
   "dependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
@@ -72,6 +71,7 @@
     "@tailwindcss/vite": "4.1.12",
     "@vitejs/plugin-react": "4.7.0",
     "gh-pages": "^6.3.0",
+    "push-dir": "^0.4.1",
     "tailwindcss": "4.1.12",
     "vite": "6.3.5"
   },
